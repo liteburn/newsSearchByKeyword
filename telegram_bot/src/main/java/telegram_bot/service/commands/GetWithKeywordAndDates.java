@@ -35,7 +35,7 @@ public class GetWithKeywordAndDates {
             String keyword = arr.get(0);
             return getNewsByTimeAndKeyword(keyword, from, to);
         } catch (ParseException | FileNotFoundException parseException){
-            return "WTF";
+            return "Wrong input file";
         }
     }
     private boolean checkIfAcceptable(String message){
