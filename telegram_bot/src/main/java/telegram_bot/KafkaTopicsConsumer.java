@@ -77,7 +77,6 @@ public class KafkaTopicsConsumer {
             }
         }
         if (keywordsCurrent.size() > 0) {
-            System.out.println("WTF");
             newsSearchBot.sendMessageToUser(String.valueOf(chatId), createMessage(keywordsCurrent, post));
         }
     }
